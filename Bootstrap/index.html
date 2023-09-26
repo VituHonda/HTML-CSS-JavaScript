@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Grid System</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <!-- Meu CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand text-purple" href="#">MyWeb</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">Disabled</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+
+
+        <!-- linha de grid -->
+        <div class="row">
+
+            <!-- 1a. coluna -->
+            <div class="col-12 col-sm-12 col-md-6">
+                <img src="./images/developer-activity-animate.svg" alt="imagem padrão">
+            </div>
+            <!-- fim 1a. coluna -->
+
+            <!-- 2.coluna -->
+            <div class="col-12 col-sm-12 col-md-6 d-flex flex-column
+            align-items-center justify-content-center">
+                <h2 class="text-purple display-2">MyWeb</h2>
+                <p class="lead text-center">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat temporibus, non fugiat error magni
+                    excepturi at ut distinctio harum porro!
+                </p>
+                <a href="" class="btn btn-outline-purple">Mais informações</a>
+            </div>
+            <!-- fim 2.coluna -->
+        </div>
+        <!-- fim linha de grid -->
+
+        <h2 class="display-2 text-purple text-center mt-3">Soluções</h2>
+        <div class="line"></div>
+
+        <!-- linha do grid -->
+        <div class="row my-4">
+
+            <!-- 1a.coluna -->
+            <div class="my-3 col-sm-12 col-md-6 col-lg-4">
+                <div class="card">
+                    <img src="./images/cards/Content creation_Isometric.svg" class="card-img-top" alt="card padrão">
+                    <div class="card-body">
+                        <h5 class="card-title text-purple">UX / UI</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-outline-purple">Clique e conheça</a>
+                    </div>
+                </div>
+            </div>
+            <!-- fim 1a.coluna -->
+
+            <!-- 2a.coluna -->
+            <div class="my-3 col-sm-12 col-md-6 col-lg-4">
+                <div class="card">
+                    <img src="./images/cards/Iphone_Isometric.svg" class="card-img-top" alt="card padrão">
+                    <div class="card-body">
+                        <h5 class="card-title text-purple">Mobile</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-outline-purple">Clique e conheça</a>
+                    </div>
+                </div>
+            </div>
+            <!-- fim 2a.coluna -->
+
+            <!-- 3a.coluna -->
+            <div class="my-3 col-sm-12 col-md-6 col-lg-4">
+                <div class="card">
+                    <img src="./images/cards/Landing Page_Isometric.svg" class="card-img-top" alt="card padrão">
+                    <div class="card-body">
+                        <h5 class="card-title text-purple">Front-End</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-outline-purple">Clique e conheça</a>
+                    </div>
+                </div>
+            </div>
+            <!-- fim 3a.coluna -->
+
+            <!-- 4a.coluna -->
+            <div class="my-3 col-sm-12 col-md-6 col-lg-4">
+                <div class="card">
+                    <img src="./images/cards/Online team meeting _Isometric.svg" class="card-img-top" alt="card padrão">
+                    <div class="card-body">
+                        <h5 class="card-title text-purple">Teams</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-outline-purple">Clique e conheça</a>
+                    </div>
+                </div>
+            </div>
+            <!-- fim 4a.coluna -->
+
+            <!-- 5a.coluna -->
+            <div class="my-3 col-sm-12 col-md-6 col-lg-4">
+                <div class="card">
+                    <img src="./images/cards/Social Media_Isometric.svg" class="card-img-top" alt="card padrão">
+                    <div class="card-body">
+                        <h5 class="card-title text-purple">Social Media</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-outline-purple">Clique e conheça</a>
+                    </div>
+                </div>
+            </div>
+            <!-- fim 5a.coluna -->
+
+            <!-- 6a.coluna -->
+            <div class="my-3 col-sm-12 col-md-6 col-lg-4">
+                <div class="card">
+                    <img src="./images/cards/Under Constructions _Isometric.svg" class="card-img-top" alt="card padrão">
+                    <div class="card-body">
+                        <h5 class="card-title text-purple">Back-End</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-outline-purple">Clique e conheça</a>
+                    </div>
+                </div>
+            </div>
+            <!-- fim 6a.coluna -->
+        </div>
+        <!-- fim linha do grid -->
+
+
+
+        <h2 class="display-2 text-purple text-center mt-3">Criar Conta</h2>
+        <div class="line"></div>
+
+        <form id="cadastro" name="cadastro" method="post" action="">
+
+            <div class="row">
+
+                <div class="col-md-4 my-3">
+                    <label for="usuario" class="form-label">Usuário:</label>
+                    <input type="text" name="usuario" id="usuario" class="form-control" placeholder="Ex: user12345"
+                        minlength="10" maxlength="15" required>
+                </div>
+
+                <div class="col-md-4 my-3">
+                    <label for="senha" class="form-label">Senha:</label>
+                    <input type="password" name="senha" id="senha" class="form-control" placeholder="Ex: 123456"
+                        minlength="8" maxlength="15" required>
+                </div>
+
+                <div class="col-md-4 my-3">
+                    <label for="email" class="form-label">Email:</label>
+                    <input type="email" name="email" id="email" class="form-control"
+                        placeholder="Ex: seuemail@email.com" required>
+                </div>
+
+                <div class="col-md-4 my-3">
+                    <label for="data" class="form-label">Data do Cadastro:</label>
+                    <input type="date" name="data" id="data" class="form-control" required>
+                </div>
+
+                <div class="col-md-4 my-3">
+                    <label for="atuacao" class="form-label">Área de atuação:</label>
+                    <select name="atuacao" id="atuacao" class="form-select">
+                        <option value="0" disabled selected>Selecione sua opção</option>
+                        <option value="1">Desenvolvimento</option>
+                        <option value="2">Banco de Dados</option>
+                        <option value="3">Cyber Security</option>
+                        <option value="4">Dev Ops</option>
+                    </select>
+                </div>
+
+                <div class="col-md-4 my-3">
+                    <p>Tipo de Conta:</p>
+
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="radioConta" id="radioConta1" value="option1">
+                        <label class="form-check-label" for="radioConta1">Free</label>
+                    </div>
+
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="radioConta" id="radioConta2" value="option2">
+                        <label class="form-check-label" for="radioConta2">Plus</label>
+                    </div>
+
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="radioConta" id="radioConta3" value="option3">
+                        <label class="form-check-label" for="radioConta3">Premium</label>
+                    </div>
+
+                </div>
+
+                <div class="col-md-4 my-3">
+                    <label for="tel" class="form-label">Celular:</label>
+                    <input type="tel" name="tel" id="tel" class="form-control" placeholder="(xx) 9999-9999">
+                </div>
+
+                <div class="col-md-4 my-3">
+                    <label for="number" class="form-label">Número:</label>
+                    <input type="number" name="number" id="number" class="form-control" min="10" max="200" step="10">
+                </div>
+
+                <div class="col-md-4 my-3">
+                    <label for="url" class="form-label">Url:</label>
+                    <input type="url" name="url" id="url" class="form-control">
+                </div>
+
+                <div class="col-12 my-3">
+                    <label for="mensagem" class="form-label">Mensagem</label>
+                    <textarea name="mensagem" id="mensagem" class="form-control"></textarea>
+                </div>
+
+                <div class="col-12 my-3 d-flex justify-content-end">
+                    <!-- antigo -->
+                    <input type="submit" value="Criar Conta" name="conta" id="conta" class="btn btn-success me-2">
+                    <input type="reset" value="Limpar Dados" name="limpar" id="limpar" class="btn btn-danger me-2">
+                    <input type="button" value="JavaScript" name="js" id="js" class="btn btn-dark me-2">
+
+                    <!-- nova -->
+                    <button type="submit" class="btn btn-success me-2">Enviar</button>
+                    <button type="reset" class="btn btn-danger me-2">Limpar</button>
+                    <button type="button" class="btn btn-dark me-2">Javascript</button>
+
+                </div>
+            </div>
+        </form>
+
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Accordion Item #1
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>This is the first item's accordion body.</strong> It is shown by default, until the
+                        collapse plugin adds the appropriate classes that we use to style each element. These classes
+                        control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+                        modify any of this with custom CSS or overriding our default variables. It's also worth noting
+                        that just about any HTML can go within the <code>.accordion-body</code>, though the transition
+                        does limit overflow.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Accordion Item #2
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>This is the second item's accordion body.</strong> It is hidden by default, until the
+                        collapse plugin adds the appropriate classes that we use to style each element. These classes
+                        control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+                        modify any of this with custom CSS or overriding our default variables. It's also worth noting
+                        that just about any HTML can go within the <code>.accordion-body</code>, though the transition
+                        does limit overflow.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Accordion Item #3
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
+                        collapse plugin adds the appropriate classes that we use to style each element. These classes
+                        control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+                        modify any of this with custom CSS or overriding our default variables. It's also worth noting
+                        that just about any HTML can go within the <code>.accordion-body</code>, though the transition
+                        does limit overflow.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="ratio ratio-16x9" id="lastvideo">
+            <iframe src="https://www.youtube.com/embed/2cZ_EFAmj08" title="YouTube video" allowfullscreen></iframe>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
