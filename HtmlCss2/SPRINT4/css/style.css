@@ -1,0 +1,54 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body{
+   background-color: black;
+}
+
+.container{
+   position: relative;
+   font-family: 'Silkscreen', cursive;
+   color: white;
+   display: flex;
+   justify-content: center;
+  
+}
+
+.life-bar{
+padding: 30px;
+  position: absolute;
+   display: flex;
+   justify-content: space-between;
+   width: 1024px;
+background-color: rgba(0, 0, 0, 0.5);
+   
+   
+}
+
+.title{
+   font-family: 'Rajdhani', sans-serif;
+   font-weight: 600;
+   
+   color: white;
+}
+.robocup{
+   font-size: 26px;
+}
+
+.bar{
+   
+   background-color: red;
+   border: 1px solid yellow;
+   border-radius: 10px;
+   height: 20px;
+   width: 200px;
+
+}
+
+.bar-value{
+   display: flex;
+   align-items: center;
+}

@@ -1,0 +1,130 @@
+:root {
+    margin: 0;
+    padding: 0;
+
+    --black: #222831;
+    --gray: #393E46;
+    --yellow: #FFD369;
+    --white: #EEEEEE;
+    --light-gray: #d3d3d3;
+    --dark-gray: rgb(48, 48, 48);
+}
+
+
+.home-icon {
+    width: 10vh;
+    height: 10vh;
+}
+
+.text-yellow {
+    color: var(--yellow);
+}
+
+.text-black {
+    color: var(--black);
+}
+
+.text-white {
+    color: var(--white);
+}
+
+.bg-yellow {
+    background-color: var(--yellow);
+}
+
+.bg-gray {
+    background-color: var(--gray);
+}
+
+.bg-light-gray {
+    background-color: var(--light-gray);
+}
+
+.bg-dark-gray {
+    background-color: var(--dark-gray);
+}
+
+.history {
+    border-radius: 50px;
+    height: 400px;
+    width: 400px; 
+}
+
+.arma {
+    border-radius: 50px;
+    min-height: 300px;
+    min-width: 300px;
+}
+
+.rodape {
+    width: 5%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.montagem-vd {
+    width: 20vw;
+    height: auto;
+    padding: 30px;
+}
+
+.videos {
+    box-shadow: 7px 7px 13px 0px rgba(227, 231, 9, 0.76);
+}
+
+.cards{
+    color: var(--dark-gray);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.card-icon {
+    font-size: 50px;
+    padding: 20px;
+    border-radius: 50%;
+
+}
+
+.big {
+    transition: 0.5s;
+}
+
+.big:hover {
+    transform: scale(1.2); 
+    background-color: var(--black);   
+}
+
+
+.card-icon:hover {
+    cursor: pointer;
+    transform: rotate(1440deg);
+}
+
+.container {
+    background-position: 100%;
+    background-attachment: fixed;
+    min-height: 30vh;
+    background-size: 1500px;
+}
+
+.bg-contato {
+    background-image: url("./media/39c40664e3245b04ea8f5c035cbd5c8a-1.gif")
+}
+
+.sombra {
+    filter: brightness(95%)
+}
+
+.footer-links {
+    text-decoration: none;
+}
+
+.hardware {
+    width: 30px;
+    height: 30px;
+}
+
+.card-heigh {
+    height: 30vh;
+}
