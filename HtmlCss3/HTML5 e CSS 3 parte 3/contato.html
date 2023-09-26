@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatos - Barbearia Alura</title>
+    <link rel="stylesheet" href="../HTML5 e CSS3 parte 2/style.css">
+    <link rel="stylesheet" href="../HTML5 e CSS3 parte 2/reset.css">
+
+</head>
+
+<body>
+
+    <header>
+        <div class="caixa">
+            <h1><img src="../HTML5 e CSS3 parte 2/imgs/logo.png" alt=""></h1>
+
+            <nav>
+                <ul>
+                    <li><a href="../HTML5 e CSS3 parte 1/index.html">Home</a></li>
+                    <li><a href="../HTML5 e CSS3 parte 2/produtos.html">Produtos</a></li>
+                    <li><a href="../HTML5 e CSS 3 parte 3/contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="contato-main">
+        <form action="">
+            <label for="nomesobrenome">Nome e sobrenome</label>
+            <input type="text" id="nomesobrenome" class="input-padrao" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" class="input-padrao" required placeholder="seuemail@email.com">
+
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="telefone" class="input-padrao" required placeholder="(xx) xxxx-xxxx">
+
+            <label for="mensagem">Mensagem</label>
+            <textarea rows="10" id="mensagem" class="input-padrao"></textarea>
+
+            <div>
+                <p>Como prefere o nosso contato?</p>
+                <label for="radio-email"><input type="radio" value="radio-email" name="contato">Email</label>
+
+                <label for="radio-telefone"><input type="radio" value="radio-telefone" name="contato">Telefone</label>
+
+                <label for="radio-wpp"><input type="radio" value="radio-wpp" name="contato" checked>Whatsapp</label>
+
+            </div>
+
+            <!-- fieldset pode ser utilizado para separar partes ao inves de usar div e ao inves de utilizar p usar legend -->
+            <fieldset>
+                <legend>Qual horário prefere ser atendido?</legend>
+                <select>
+
+                    <option>Manhã</option>
+                    <option>Tarde</option>
+                    <option>Noite</option>
+
+                </select>
+            </fieldset>
+
+            <label class="checkbox"><input type="checkbox">Gostaria de receber nossas novidades por email?</label>
+            <input type="submit" value="Enviar formulário" id="margin-footer" class="enviar">
+
+        </form>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Dia</th>
+                    <th>Horário</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td>Segunda</td>
+                    <td>8h - 20h</td>
+                </tr>
+                <tr>
+                    <td>Quarta</td>
+                    <td>8h - 20h</td>
+                </tr>
+                <tr>
+                    <td>Sexta</td>
+                    <td>8h - 20h</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </main>
+
+    <footer class="margin-top">
+
+        <img src="../HTML5 e CSS3 parte 2/imgs/logo-branco.png" alt="Contato Barbearia Alura">
+
+        <p class="copyright">&copy; Copyright Barbearia Alura - 2023</p>
+
+    </footer>
+
+</body>
+
+</html>
