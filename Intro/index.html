@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto XPTO</title>
+
+
+    <!-- Importando fontes com link  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+    <!-- linkando cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- linkando a CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+
+    <header class="header-page">
+
+        <!-- span funciona para estilisar 
+                                            uma parte do conteúdo por meio de
+                                            uma classe -->
+        <h1 class="header-title"><span class="header-span-2">Projeto</span> <span class="header-span">XPTO</span></h1>
+
+        <!-- nav>ul>li*4>a{Link} 
+        
+        plugin emit
+        ">" = dentro        
+        
+        Fazendo código programando
+        -->
+
+        <nav class="header-menu">
+            <ul>
+                <!-- Para identificar ids nos links href colocar um "#" antes do nome da id -->
+                <!-- OBS:case sensitive funciona exatamente para o que está escrito letras -->
+                <!-- maiúsculas ou minúsculas -->
+                <li><a href="#tech">Tecnologias</a></li>
+                <li><a href="#solution">Soluções</a></li>
+                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <!-- Classe hero sera criada para centralizar o conteudo de h2 -->
+    <div class="container bg-image-1 hero">
+        <h2 class="hero-title">Criamos soluções inteligentes</h2>
+        <p class="hero-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad veniam illo aliquid nisi id.
+            Tempora?</p>
+        <a href="" class="btn">Mais informações</a>
+    </div>
+    <!-- fim hero -->
+
+    <!-- cards -->
+    <div class="container bg-color-1 cards" id="tech">
+        <!-- card 1 -->
+        <div class="card-item">
+
+            <!-- https://fontawesome.com/icons/rocket?s=solid -->
+            <!-- https://cdnjs.com/libraries/font-awesome -->
+
+            <i class="fa-solid fa-rocket card-icon"></i>
+            <h2 class="card-title">SPACE</h2>
+            <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore provident molestias accusamus fugiat
+                ipsa molestiae.
+            </p>
+            <a href="" class="btn">Veja mais</a>
+        </div>
+
+        <!-- card 2 -->
+        <div class="card-item">
+
+            <!-- https://fontawesome.com/icons/rocket?s=solid -->
+            <!-- https://cdnjs.com/libraries/font-awesome -->
+
+            <i class="fa-solid fa-robot card-icon"></i>
+            <h2 class="card-title">ROBOT</h2>
+            <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore provident molestias accusamus fugiat
+                ipsa molestiae.
+            </p>
+            <a href="" class="btn">Veja mais</a>
+        </div>
+
+        <!-- card 3 -->
+        <div class="card-item">
+
+            <!-- https://fontawesome.com/icons/rocket?s=solid -->
+            <!-- https://cdnjs.com/libraries/font-awesome -->
+
+            <i class="fa-solid fa-car-side card-icon"></i>
+            <h2 class="card-title">CAR</h2>
+            <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore provident molestias accusamus fugiat
+                ipsa molestiae.
+            </p>
+            <a href="" class="btn">Veja mais</a>
+        </div>
+    </div>
+    <!-- fim cards -->
+
+    <!-- Segundo Container SOLUÇÔES-->
+
+    <div class="container bg-image-2 solution" id="solution">
+
+
+        <!-- span,link,img todo o conteudo fica ao lado e não pula linha -->
+        <h2 class="solution-title">Criamos soluções para
+            <span class="span-solution"></span>
+        </h2>
+
+        <!-- &nbsp; da um espaço -->
+        <p class="solution-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores adipisci inventore
+            odit, omnis necessitatibus officiis. Fugiat praesentium facere, expedita beatae iusto nostrum libero ut.
+            Veniam exercitationem iusto illo corrupti voluptates?</p>
+        <a href="" class="btn">Conheça nosas soluções <i class="fa-solid fa-gear gear"></i></a>
+
+    </div>
+    <!-- FIM CONTAINER 2 SOLUÇÔES -->
+
+    <!-- GALERIA  -->
+    <div class="container bg-color-1 gallery" id="portfolio">
+
+        <!-- figure tag com peso semântico maior, guarda conjunto de imagens,video e som -->
+        <figure class="gallery-item">
+
+            <img src="./images/pexels-expect-best-246684.jpg" alt="imagem de um celular">
+
+            <!-- figcaption tag para inserir descrição só pode e deve ser usada dentro de figure -->
+            <figcaption class="gallery-text">Lorem ipsum dolor sit amet.</figcaption>
+
+        </figure>
+
+        <figure class="gallery-item">
+
+            <img src="./images/pexels-negative-space-34140.jpg" alt="imagem de um notebook">
+
+            <figcaption class="gallery-text">Lorem ipsum dolor sit amet.</figcaption>
+
+        </figure>
+
+        <figure class="gallery-item">
+
+            <img src="./images/pexels-tranmautritam-251225.jpg" alt="imagem de um mac">
+
+            <figcaption class="gallery-text">Lorem ipsum dolor sit amet.</figcaption>
+
+        </figure>
+
+        <figure class="gallery-item">
+
+            <img src="./images/pexels-expect-best-246684.jpg" alt="imagem de um celular">
+
+            <!-- figcaption tag para inserir descrição só pode e deve ser usada dentro de figure -->
+            <figcaption class="gallery-text">Lorem ipsum dolor sit amet.</figcaption>
+
+        </figure>
+
+        <figure class="gallery-item">
+
+            <img src="./images/pexels-negative-space-34140.jpg" alt="imagem de um notebook">
+
+            <figcaption class="gallery-text">Lorem ipsum dolor sit amet.</figcaption>
+
+        </figure>
+
+        <figure class="gallery-item">
+
+            <img src="./images/pexels-tranmautritam-251225.jpg" alt="imagem de um mac">
+
+            <figcaption class="gallery-text">Lorem ipsum dolor sit amet.</figcaption>
+
+        </figure>
+
+        <figure class="gallery-item">
+
+            <img src="./images/pexels-expect-best-246684.jpg" alt="imagem de um celular">
+
+            <!-- figcaption tag para inserir descrição só pode e deve ser usada dentro de figure -->
+            <figcaption class="gallery-text">Lorem ipsum dolor sit amet.</figcaption>
+
+        </figure>
+
+        <figure class="gallery-item">
+
+            <img src="./images/pexels-negative-space-34140.jpg" alt="imagem de um notebook">
+
+            <figcaption class="gallery-text">Lorem ipsum dolor sit amet.</figcaption>
+
+        </figure>
+
+        <figure class="gallery-item">
+
+            <img src="./images/pexels-tranmautritam-251225.jpg" alt="imagem de um mac">
+
+            <figcaption class="gallery-text">Lorem ipsum dolor sit amet.</figcaption>
+
+        </figure>
+
+    </div>
+
+    <!-- FIM GALERIA -->
+
+    <div class="container bg-image-3" id="contact"></div>
+</body>
+
+</html>

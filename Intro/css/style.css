@@ -1,0 +1,329 @@
+/* reset css - usar o asterisco(*) */
+* {
+    margin: 0;
+
+    /* Comando para digitar "padding: 0;" = p0 */
+    padding: 0;
+
+    /* Calcula o aumento de tela gerado pelo padding */
+    box-sizing: border-box;
+}
+
+/* variáveis CSS */
+:root {
+    --bg-dark: #000;
+    --color-secondary: #dc143c;
+    --color-primary: white;
+}
+
+/* Important -> can i use */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-primary);
+}
+
+/***************************** header-page *******************************/
+
+.header-page {
+    width: 100%;
+    height: 80px;
+    /* Utilizando flex-container este será aplicado apenas aos filhos de onde foi aplicado */
+    display: flex;
+    /* O display flex por padrão trás o:
+    flex-direction: row; */
+    
+    /* Trás também por padrão alinhamento vertical para row
+    align-items: flex-start; */
+    align-items: center;
+    
+    /* Também por padrão alinhamento horizontal para row
+    justify-content: ;
+    Existe também o:
+    justify-content: space-around; - espaçamentos nas laterais será menor do que os centrais
+    justify-content: space-evenly; - espaçamentos iguais entre o conteúdo */
+    justify-content: space-between;
+    
+    /* Funciona como margem */
+    padding: 20px;
+    
+    /* Tirar a característica de bloco ou criar uma segunda camada e deixar um bloco sobre o outro */
+    position: absolute;
+}
+
+.header-tittle {
+    font-size: 40px;
+    /*font-weight Engrossa e deixa maior a fonte */
+    font-weight: 900;
+}
+
+.header-span {
+    color: var(--color-secondary);
+}
+
+.header-span-2 {
+    color: var(--color-primary);
+}
+
+.header-menu ul {
+    display: flex;
+}
+
+.header-menu li {
+    margin: 0 10px;
+}
+
+.header-menu a {
+    font-size: 15px;
+    font-weight: 700;
+    /* Tempo do efeito aplicado a tag */
+    transition: .5s;
+}
+
+/* Efeito para mudar a cor quando passar o mouse por cima */
+.header-menu a:hover {
+    color: var(--color-secondary);
+}
+
+/***************************** fim header-page *******************************/
+
+/***************************** hero *******************************/
+.hero {
+    text-align: center;
+    padding: 0 20px;
+
+    /* padrão */
+    /* flex-direction: row; */
+    display: flex;
+
+    /* usar o padrão mantém o alinhamento horizontal vertical,
+    usar column inverte o alinhamento do align-items e justify-content */
+    flex-direction: column;
+
+    /* alinhamento vertical */
+    align-items: center;
+    
+    /* alinhamento horizontal */
+    justify-content: center;
+
+    color: var(--color-primary);
+}
+
+.hero-title {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.hero-text {
+    width: 50%;
+    line-height: 30px;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.btn {
+    border: 2px solid var(--color-secondary);
+    padding: 15px 30px;
+    border-radius: 70px;
+    color: var(--color-secondary);
+    /* font-weight vai de 100 a 900 espessura do texto */
+    font-weight: 700;
+    transition: .5s;
+}
+
+.btn:hover {
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
+}
+
+
+/***************************** fim hero *******************************/
+
+/***************************** cards *******************************/
+.cards {
+    color: var(--color-primary);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.card-item {
+    border: 1px solid var(--color-secondary);
+    width: 30%;
+    height: 450px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-icon {
+    font-size: 50px;
+    color: var(--color-secondary);
+    transition: .5s;
+    border: 1px solid var(--color-secondary);
+    padding: 20px;
+    /* border-radius: 50%; */
+}
+
+.card-icon:hover {
+    cursor: pointer;
+    transform: rotate(1440deg);
+}
+
+.card-title {
+    margin: 10px 0px; 
+}
+
+.card-text {
+    margin: 20px 0px 50px;
+} 
+
+/***************************** fim cards *******************************/
+
+/***************************** solution *******************************/
+
+.solution {
+    color: var(--color-primary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.solution-title {
+    font-size: 50px;
+    margin-bottom: 40px;
+}
+
+.solution-text {
+    width: 50%;
+    line-height: 30px;
+    margin-bottom: 40px;
+    font-size: 18px;
+}
+
+.span-solution {
+    display: block;
+}
+
+/* after e before faz acontecer algo depois de onde for inserido bom para animações */
+.span-solution::after {
+    content: 'Agronegócio';
+    animation: solution 5s infinite;
+}
+
+/* possível criar infinitosna página e deve ter um identificador */
+@keyframes solution {
+    25% {
+        content: 'Transporte';
+    }
+    50% {
+        content: 'Comércio';
+    }
+    
+    75% {
+        content: 'Finanças';
+    }
+}
+
+.gear {
+    margin-left: 5px;
+}
+
+.btn:hover .gear {
+    animation: gear 2s linear infinite;  
+}
+
+@keyframes gear {
+    from {
+        transform: rotate(360deg);
+    }
+}
+
+
+/***************************** fim solution *******************************/
+
+/***************************** galeria *******************************/
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.gallery-item {
+    width: 30%;
+    background-color: var(--color-primary);
+    padding: 10px 20px 20px 10px;
+    margin: 20px 0px;
+    border-radius: 7px;
+    transition: 0.5s;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 220px;
+}
+
+.gallery-item figcaption {
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.gallery-item:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.gallery-text {
+    text-align: center;
+}
+
+
+
+/***************************** fim galeria *******************************/
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    background-position: 50%;
+    background-attachment: fixed;
+}
+
+/* gradiente dentro da bg--image-1  */
+.bg-image-1 {
+    /* rgba (r, g, b, grau de opacidade) */
+    background-image: linear-gradient(to top, rgba(0, 0, 0, .6), rgba(0, 0, 0, 0)),
+    url(../images/pexels-negative-space-34140.jpg);
+}
+
+.bg-image-2 {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, .6), rgba(0, 0, 0, .3)), 
+    url(../images/pexels-expect-best-246684.jpg);
+}
+
+.bg-image-3 {
+    background-image: url(../images/pexels-tranmautritam-251225.jpg);
+}
+
+.bg-color-1 {
+    background-color: var(--bg-dark);
+}
+
