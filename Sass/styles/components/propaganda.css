@@ -1,0 +1,39 @@
+.propaganda {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.propaganda .img-produto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+}
+.propaganda .img-produto img {
+  width: 360px;
+}
+.propaganda .texto-produto {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #495371;
+  font-weight: 300;
+}
+.propaganda .texto-produto h3 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  border-bottom: 6px solid #74959A;
+}
+.propaganda .texto-produto h4 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+.propaganda .texto-produto p {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}/*# sourceMappingURL=propaganda.css.map */
